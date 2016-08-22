@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <link rel="stylesheet" type="text/css" href="../../lib/css/cocacola_login.css">
+	<link rel = "shortcut icon" href = "/CocaCola/favicon.ico"> 
+</head>
+
+<body class="parents">
+    <div class="login_wrap">    
+   		<div class="sm_container">
+   			<h1><img src="../../lib/login_images/h1_login.gif" alt="회원 로그인" /></h1>
+   
+   			<div class="login_body">
+   				<p class ="head_txt"><img src="../../lib/login_images/parent_txt.gif" alt="14세 미만의 어린이는 부모님의 동의가 있어야 한국 코카-콜라의 서비스를 이용하실 수 있습니다. 부모님의 이메일로 동의 메일이 발송되며, 부모님께서 동의메일의 동의하기 버튼을 누르셔야 회원가입이 완료됩니다." /></p>
+   				<h2><img src="../../lib/login_images/parentmail_tit.gif" alt="보모님 동의 메일 보내기" /></h2>
+				<fieldset>
+					<legend>아이디 찾기</legend>
+	   				<div class="buttons">   					
+						<div class="button_box">
+							<p>
+								<img src="../../lib/login_images/parentmail_txt.gif" alt="아래 정보를 입력해주세요.">
+								<a onclick="window.open('/CocaCola/html/etc/privacy.jsp','_blank','width=590,height=580')"><span class ="pri_info"> 개인정보처리방침&nbsp;&gt;</span></a>
+							</p>
+							
+							<dl class="parent_form">
+								<dt><label for="emailId"><img src="../../lib/login_images/parentmail_id.gif" alt="아이디" /></label></dt>
+								<dd><input type="text" name="emailId" id="emailId" class="input" value="" /></dd>
+								<dt><label for="emailPw"><img src="../../lib/login_images/parentmail_pass.gif" alt="비밀번호" /></label></dt>
+								<dd><input type="password" name="emailPw" id="emailPw" class="input" value="" /></dd>
+								<dt><label for="email1"><img src="../../lib/login_images/parentmail_email.gif" alt="부모님 메일" /></label></dt>
+								<dd>
+									<input type="text" name="email1" id="email1" class="email1" value="" />&nbsp;@									
+									<input type="text" name="email2" id="email2" class="email2" value="" title="이메일서비스사" />
+								</dd>
+							</dl>
+							
+						
+						</div>					   				
+	   				</div>
+	   				<p class="yes_no">
+						<span><img src="../../lib/login_images/btn01_confirm.gif" alt="확인" style="cursor:pointer;"></span>
+						<span><a href="./login.html"><img src="../../lib/login_images/btn01_cansel.gif" alt="취소"></a></span>
+					</p>   
+   				</fieldset>
+   			</div>   			
+   			
+   		</div>   	
+    </div>
+</body>
+</html>

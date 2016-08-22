@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<link rel="stylesheet" type="text/css" href="../../lib/css/cocacola.css">
+<title>Coca-Cola Korea</title>
+
+<style type="text/css">
+
+	@media screen and (min-width: 641px) {	
+	
+	    body{
+	    background: #f6f3ee url('../../lib/images/bg_tvcf.jpg') no-repeat left top;
+	    position: relative;    
+	    width: 100%;
+	    height: 100%;
+	    overflow:hidden;
+	    }
+	    
+	    .video-cont .png25 {
+							    display: inline-block;
+							    margin-top: 183px;
+    							margin-left: -252px;
+    							padding: 0 0 0 20px;
+							
+							}
+	    
+		.videocontent .png24 {margin-left:276px; float:left; padding:72px 0 0 0;}            
+	
+	    .videocontent .png26 {margin-left:276px; margin-top:43px;}
+	    .videocontent .video1_new_tvcf {padding:10px 0 10px 0; display:inline-block; border:1px #F00 solid none;  margin-left:276px;
+    					overflow:hidden;}
+    					
+		.tvcf_menu_box {position: relative; padding: 20px 0 8px 0; margin-left: 276px; }
+    	.tvcf .tvcf_menulist { width: 100%; position: relative; margin-left:267px;} 		
+    	.tvcf_menulist li { float: left; width: 24%; max-width: 233px;}			
+    					
+    	.videomenu_ep1 { float:left; margin-left:276px; }
+		.videomenu_ep1 li {display:inline-block; padding:10px 0 10px 0; position:relative; }
+		.videomenu_ep1 li img {width:229px; height:173px; }	
+	
+		.videomenu_ep2 {float:left; margin-left:276px; display:none; }
+		.videomenu_ep2 li {display:inline-block; padding:10px 0 10px 0; position:relative;}
+		.videomenu_ep2 li img {width:229px; height:173px;}	
+	
+		.videomenu_ep3 {float:left; margin-left:276px; display:none; }
+		.videomenu_ep3 li {display:inline-block; padding:10px 0 10px 0; position:relative;}
+		.videomenu_ep3 li img {width:229px; height:173px;}
+	
+		.videomenu_ep4 { float:left; margin-left:276px;  display:none;}
+		.videomenu_ep4 li {display:inline-block; padding:10px 0 10px 0; position:relative;}
+		.videomenu_ep4 li img {width:229px; height:173px;}						
+   	}
+   	
+   	@media screen and (max-width: 640px){
+   		body{ background: #fff; }
+   		.videosub_wrap {background:#FFF;}
+   		
+   		.videocontent .png24 {margin:0; padding:34px 0 0 20px;}
+   		.videocontent .png24 img {max-width: 60%;}
+   		
+		.videocontent .png25 img { vertical-align: top ;}
+		
+		.videocontent .video1_new_tvcf	{margin-left:0; padding-left:20px;}		
+		.dbdb {display:none;}
+		
+		.videocontent .png26 {margin-left:10px;}
+		
+		.tvcf_menu_box { position: relative; width: 100%; padding: 20px 0 8px 10px; margin-left:0;} 
+		.tvcf .tvcf_menulist { min-width: 468px; width: 100%; position: relative; margin: 0 auto;} 
+		.tvcf_menulist li { float: left; width: 25%; max-width: 117px;}
+		
+		.videomenu_ep1 { float:left; margin-left:0; }
+		.videomenu_ep1 li {display:inline-block; padding:10px 0 10px 0; position:relative; }
+		.videomenu_ep1 li img {width:229px; height:173px; }	
+	
+		.videomenu_ep2 {float:left; margin-left:0; display:none; }
+		.videomenu_ep2 li {display:inline-block; padding:10px 0 10px 0; position:relative;}
+		.videomenu_ep2 li img {width:229px; height:173px;}	
+	
+		.videomenu_ep3 {float:left; margin-left:0; display:none; }
+		.videomenu_ep3 li {display:inline-block; padding:10px 0 10px 0; position:relative;}
+		.videomenu_ep3 li img {width:229px; height:173px;}
+	
+		.videomenu_ep4 { float:left; margin-left:0;  display:none;}
+		.videomenu_ep4 li {display:inline-block; padding:10px 0 10px 0; position:relative;}
+		.videomenu_ep4 li img {width:229px; height:173px;}	
+		.video-cont {max-width:490px; min-width:490px; margin:0 auto; padding-top:45px;}	
+		
+   	}
+   	
+    
+    
+    
+    .videocontent .video1_new_tvcf li {float:left; margin:10px 4px;}
+    
+    .videocontent .video1_new_tvcf .video_summer .video_tit {color:red; text-align:center; font-size:12px; margin-top:-30px;}
+    .videocontent .video1_new_tvcf .video_cgram .video_tit {color:#2b6737; text-align:center; font-size:12px; margin-top:-30px;}
+    .videocontent .video1_new_tvcf .video_toreta .video_tit {color:#68c2ef; text-align:center; font-size:12px; margin-top:-30px;}
+    .videocontent .video1_new_tvcf .video_power .video_tit {color:#009dee; text-align:center; font-size:12px; margin-top:-30px;}
+    .videocontent .video1_new_tvcf .video_sprite .video_tit {color:#2a4faf; text-align:center; font-size:12px; margin-top:-30px;}
+    .videocontent .video1_new_tvcf .video_sukangjun .video_tit {color:red; text-align:center; font-size:12px; margin-top:-30px;}
+    .videocontent .video1_new_tvcf .video_gotica .video_tit {color:#6b3e19; text-align:center; font-size:12px; margin-top:-30px; }
+    
+    /*on 클래스를 사용하여 스크립트*/
+    
+    
+    
+    
+    .tvcf_menulist li a.tvcf_menu1.on { background: url('../../lib/images/subgnb_bg_video1_on.png') 0 0 no-repeat;}
+    .tvcf_menulist li a.tvcf_menu1 { background: url('/Static/images/sub/subgnb_bg_video1.png') 0 0 no-repeat;}
+    .tvcf_menulist li a.tvcf_menu1.on p {max-width: 85px; background: url('../../lib/images/subgnb_video1_on.png') 50% 17px no-repeat;}
+    .tvcf_menulist li a.tvcf_menu1 p {max-width: 85px; background: url('../../lib/images/subgnb_video1.png') 50% 17px no-repeat;}
+    
+    .tvcf_menulist li a.tvcf_menu2 { background: url('../../lib/images/subgnb_bg_video5.png') 0 0 no-repeat;}
+    .tvcf_menulist li a {height: 50px; display: block; width: 100%; position: relative; text-align: center;}
+    .tvcf_menulist li a.tvcf_menu2.on p { max-width: 93px; background: url('../../lib/images/subgnb_video2_on.png') 50% 17px no-repeat;}
+    .tvcf_menulist li a.tvcf_menu2 p { max-width: 93px; background: url('../../lib/images/subgnb_video2.png') 50% 17px no-repeat;}
+    
+    
+    .tvcf_menulist li a.tvcf_menu3.on { background: url('../../lib/images/subgnb_bg_video2_on.png') 0 0 no-repeat;}
+    .tvcf_menulist li a.tvcf_menu3 { background: url('../../lib/images/subgnb_bg_video2.png') 0 0 no-repeat;}
+    .tvcf_menulist li a.tvcf_menu3.on p { max-width: 41px; background: url('../../lib/images/subgnb_video3_on.png') 50% 17px no-repeat;}
+    .tvcf_menulist li a.tvcf_menu3 p { max-width: 41px; background: url('../../lib/images/subgnb_video3.png') 50% 17px no-repeat;}
+    
+    
+    .tvcf_menulist li a.tvcf_menu4.on { background: url('../../lib/images/subgnb_bg_video3_on.png') 100% 100% no-repeat;}
+    .tvcf_menulist li a.tvcf_menu4 { background: url('../../lib/images/subgnb_bg_video4.png') 100% 100% no-repeat;}
+    .tvcf_menulist li a.tvcf_menu4.on p { max-width: 159px; background: url('../../lib/images/subgnb_video4_on.png') 50% 11px no-repeat;
+   										max-height: 40px; height: 40px;}
+	.tvcf_menulist li a.tvcf_menu4 p { max-width: 159px; background: url('../../lib/images/subgnb_video4.png') 50% 11px no-repeat; max-height: 40px;
+    									height: 40px; padding-top: 0;}   										
+    
+    
+    .tvcf_menulist li a {height: 50px; display: block; width: 100%; position: relative; text-align: center;}
+    .tvcf_menulist li p {padding-top: 17px; margin: 0 auto; width: 100%; max-height: 13px; text-indent: -9999px; display: block;}
+    .tvcf_menulist span.line { float: left;}
+    
+	/*menulist 이밴트 끝*/
+	
+		
+	/*임시 디스플레이 none 처리해논것*/
+	.video1_new_tvcf .video_txt {display:none;}	
+	
+	
+	
+	
+															
+</style>
+
+</head>
+<body>
+	<div class="videosub_wrap">
+        <div class ="videosite-nav"></div>
+            <div class ="videocontent">
+                <h3><img src ="../../lib/images/title_video.png" class="png24"></h3>
+                <div class="video-cont">
+	                <h4><img src ="../../lib/images/tit_video1.png" class="png25"></h4>
+	                <ul class ="video1_new_tvcf">
+	                   
+	                        <li>
+	                            <a href="" class="video_summer">
+	                            	
+	                                <img src ="../../lib/images/yujivideoimg1.png" alt="coke summer">
+	                                <p class="video_tit"><strong>coke summer</strong></p>
+	                                <p class="video_txt"><strong>코카-콜라 & 여름,
+	                                		    여름 & 친구들,
+	                                		    친구들 & 해변, 해변 & 태양</strong></p>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="" class="video_cgram">
+	                                <img src ="../../lib/images/yujivideoimg4.png" alt="coke summer">
+	                                <p class="video_tit"><strong>열때마다 톡 쏜다 - 차승원</strong></p>
+	                                <p class="video_txt"><strong>열 때마다 톡 쏜다. 
+	                                		    강렬하게 퍼지는 스파클링. 
+	                               			    마지막까지 톡 쏘는 탄산수, 씨그램.</strong></p>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="" class="video_toreta dbdb">
+	                                <img src ="../../lib/images/yujivideoimg3.png">
+	                                <p class="video_tit"><strong>토레타! By Aquarius - 박보영</strong></p>
+	                                <p class="video_txt"><strong>언제 어디서나 몸 속 수분을 간편하게 관리하고 싶다면?
+	                                		   10가지 과채의 착한 수분! 
+											    저자극ㆍ저칼로리 수분보충음료‘토레타’</strong></p>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="" class="video_power dbdb">
+	                                <img src ="../../lib/images/yujivideoimg9.png">
+	                                <p class="video_tit"><strong>NEW BLUE BLOOD</strong></p>
+	                                <p class="video_txt"><strong>달리고, 도전하고, 승리하는
+											   New Blue Blood!
+											    그들이 있는 곳엔 파워가 있다.</strong></p>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="" class="video_sprite dbdb">
+	                                <img src ="../../lib/images/yujivideoimg8.png">
+	                                <p class="video_tit"><strong>속 시원하게 스프라이트!</strong></p>
+	                                <p class="video_txt"><strong>돌직구처럼! 속 시원하게!
+											    스프라이트처럼! 속 시원하게!</strong></p>
+	                            </a>
+	                    	</li>
+	                    	<li>
+	                            <a href="" class="video_sukangjun dbdb">
+	                                <img src ="../../lib/images/yujivideoimg10.png">
+	                                <p class="video_tit"><strong>마음을 전해요 - 서강준</strong></p>
+	                                <p class="video_txt"><strong>여심 저격!
+											    눈빛만 봐도 설렘 가득
+											    코카-콜라로 전하는 서강준의 짜릿한 고백, 궁금하다면 ?</strong></p>
+	                            </a>
+	                    	</li>
+	                    	<li style="display:none;">
+	                            <a href="" class="video_gotica dbdb">
+	                                <img src ="../../lib/images/yujivideoimg6.png">
+	                                <p class="video_tit"><strong>고티카의 골든타임</strong></p>
+	                                <p class="video_txt"><strong>로스팅 후, 24시간 이내 추출.
+											    고티카의 골든타임!</strong></p>
+	                            </a>
+	                    	</li>
+	                </ul>
+	                <h4><img src ="../../lib/images/tit_video2.png" class="png26"></h4>
+		              <div class="tvcf_menu_box">							
+						<ul class="tvcf_menulist clearfix">
+							<li id="Cate_c01"><a href="javascript:brandlist(1);" class="tvcf_menu1 on"><p>sparkling</p></a></li><span class="line"><img src="../../lib/images/subgnb_bg_videoline.png" alt=""></span>
+							<li id="Cate_c07"><a href="javascript:brandlist(2);" class="tvcf_menu2"><p>coffeentea</p></a></li>
+							<li id="Cate_c10"><a href="javascript:brandlist(3);" class="tvcf_menu3"><p>juice</p></a></li><span class="line"><img src="../../lib/images/subgnb_bg_videoline.png" alt=""></span>
+							<li id="Cate_c13"><a href="javascript:brandlist(4);" class="tvcf_menu4"><p>sportsnhydration</p></a></li>
+						</ul>
+					</div>
+		                <ul  class="videomenu_ep1 ">
+			                <li id="videoeq01"><a href=""><img src="../../lib/images/img_brand1.png"></a></li>
+			                <li id="videoeq02"><a href=""><img src="../../lib/images/img_brand2.png"></a></li>
+			                <li id="videoeq03"><a href=""><img src="../../lib/images/img_brand3.png"></a></li>
+			                <li id="videoeq04"><a href=""><img src="../../lib/images/img_brand4.png"></a></li>
+			                <li id="videoeq05"><a href=""><img src="../../lib/images/img_brand5.png"></a></li>
+			                <li id="videoeq06"><a href=""><img src="../../lib/images/img_brand7.png"></a></li>
+		                </ul>
+		                 <ul class="videomenu_ep2">
+			                <li id="videoeq07"><a href=""><img src="../../lib/images/img_brand8.png"></a></li>
+			                <li id="videoeq08"><a href=""><img src="../../lib/images/img_brand9.png"></a></li>
+			                <li id="videoeq09"><a href=""><img src="../../lib/images/img_brand10.png"></a></li>
+		                </ul>
+		                 <ul class="videomenu_ep3">
+			                <li id="videoeq10"><a href=""><img src="../../lib/images/img_brand11.png"></a></li>
+			                
+		                </ul>
+		                 <ul class="videomenu_ep4">
+			                <li id="videoeq01"><a href=""><img src="../../lib/images/img_brand12.png"></a></li>
+			                <li id="videoeq02"><a href=""><img src="../../lib/images/img_brand14.png"></a></li>
+			                <li id="videoeq03"><a href=""><img src="../../lib/images/img_brand15.png"></a></li>
+			                <li id="videoeq04"><a href=""><img src="../../lib/images/img_brand16.png"></a></li>
+		                </ul>
+		       
+	            </div>
+            
+            </div>
+    </div>
+    
+</body>
+</html>

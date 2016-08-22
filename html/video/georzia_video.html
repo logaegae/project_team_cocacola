@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <title>Georgia</title>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<script>
+$(document).ready(function(){
+       //장막이벤트내용
+        function popMaker(id){
+            //var contents = $('.'+id).html();
+            var tag = "";
+            tag+='<div class="popup '+id+'">';
+            tag+='<div class="content">';
+           // tag+=contents;
+            tag+='</div>';
+            tag+='</div>';
+            $('body').append(tag).find('.content').load('popup.html #'+id);
+
+
+            centerPosition($('.'+id));
+        }
+   function blindFn(){
+       var bl_Tag = "";
+       bl_Tag += '<div class="blind">';
+       bl_Tag += '</div>';
+       $('body').prepend(bl_Tag);
+       //장막생성 스타일
+       $('.blind').css({
+           "position":'absolute',
+           "background-color": '#000',
+           "left": 0,
+           "right": '0',
+           "top": 0,
+           "bottom": 0,
+           "display":'none'
+       }).fadeTo(800,0.4)
+   }
+  function centerPosition(target){
+           target.css({
+
+               right:"50%",
+               marginRight:function(){
+                  var aa = $(this).css('width');
+                  return -parseInt(aa)/2 + 'px';
+               },
+               bottom:"50%",
+               marginBottom:function(){
+                  var aa = $(this).css('height');
+                  return -parseInt(aa)/2 + 'px';
+
+               }
+           })
+
+       }
+
+       //닫기
+        var closeEvent = function(){
+            //$('.blind').remove();
+            $('.popup').fadeOut(800,function(){
+                $(this).remove()
+            })
+            $('.blind').fadeOut(800,function(){
+                $(this).remove()
+            })
+        }
+
+       var openPopUp = function(){
+           var id = $(this).attr('id');
+           blindFn(); // 막생성
+           popMaker(id); // 팝생성 //팝위치
+           $('.popup').show(800); //보여주기
+           return false;
+        }
+       //클릭이벤트 장막
+        $('ul li').click(openPopUp);
+        $('body').on('click','.close',closeEvent);
+     })
+
+</script>
+<style>
+          *{
+                    list-style: none;
+                    text-decoration: none;
+          }
+          #popup6 iframe, #popup7 iframe, #popup8 iframe, #popup9 iframe,
+          #popup10 iframe, #popup11 iframe, #popup12 iframe{
+                     width: 100%;
+          }
+        .popup{
+            width: 562px;
+            height: 360px;
+            background-image: url("../../lib/images/video/Coffee&Tea/Georgia/tvcf_pop_georgia.png");
+            position:absolute;
+            top:0;
+            left:0;
+            z-index:1;
+            display:none;
+        }
+          div .close{
+                  width: 65px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 10px;
+                  background-color: transparent;
+                  border: none;
+                  margin-top: -10px;
+        }
+        div .close img{
+                  width: 65px;
+                  height: 30px;
+        }
+        div .tit{
+          color: #fff;
+          margin-top: 10px;
+          font-weight: bold;
+          text-align: left;
+          padding-left: 65px;
+          display: block;
+          font-size: 12px;
+        }
+          li{
+                    float: left;
+                    margin-left: 10px;
+          }
+          ul li img a strong{
+                    text-align: left;
+                    margin-left: 10px;
+          }
+</style>
+<body>
+<ul>
+<li id="popup1">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/53423950-81bf-49b0-ae46-79ddb1708a92.png" style="display: inline;" alt="고티카의 골든타임">
+<p style="display: block;"><strong style="color: #6b3e19; font-size: 12px;">고티카의 골든타임</strong></p>
+<p style="display: none;"><strong>로스팅 후, 24시간 이내 추출. 고티카의 골든타임!</strong></p>
+</a>
+</li>
+<li id="popup2">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/dd3eab11-56e5-419a-aac4-480e9eeb6044.png" style="display: inline;" alt="커피는 향이다 - 이서진">
+<p style="display: block"><strong style="color: #6b3219; font-size: 12px;">커피는 향이다 - 이서진</strong></p>
+<p style="display: none;"><strong>커피는 맛이 아니다 커피는 향이다</strong></p>
+</a>
+</li>
+<li id="popup3">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/e6cb1162-1d44-432b-8a8e-d344f6a48ddc.png" style="display: inline;" alt="시베리아 같은 직장생활">
+<p style="display: block"><strong style="color: #6b3219; font-size: 12px;">시베리아 같은 직장생활</strong></p>
+<p style="display: none;"><strong>시베리아 같은 직장생활에 여유가 필요할때, 조지아를 마신다!</strong></p>
+</a>
+</li>
+<li id="popup4">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/27b8ac24-5e90-4ae7-90dd-8e86ea3364c2.png" style="display: inline;" alt="직장인의 품격">
+<p style="display: block"><strong style="color: #6b3219; font-size: 12px;">직장인의 품격</strong></p>
+<p style="display: none;"><strong>직장인의 품격을 지켜주는 조지아 에메랄드 마운틴 블렌드</strong></p>
+</a>
+</li>
+<li id="popup5">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/192de245-a050-4d82-bba7-2cb4a1092b8c.png" style="display: inline;" alt="콜롬비아 원두의 환상적인 풍미">
+<p style="display: block"><strong style="color: #6b3219; font-size: 12px;">콜롬비아 원두의 환상적인 풍미</strong></p>
+<p style="display: none;"><strong>커피 하면 콜롬비아지~! 이번 휴가는 콜롬비아로~!</strong></p>
+</a>
+</li>
+<li id="popup6">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/fa93343f-4188-4daa-8976-7a075d0a5493.png" style="display: inline;" alt="새로 나온 조지아 후배 상사">
+<p style="display: block"><strong style="color: #6b3219; font-size: 12px;">새로 나온 조지아 후배 상사</strong></p>
+<p style="display: none;"><strong></strong></p>
+</a>
+</li>
+<li id="popup7">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/2739179c-05e0-4639-9103-2e47eea4f147.png" style="display: inline;" alt="새로 나온 조지아 - Cinema편">
+<p style="display: block"><strong style="color: #6b3219; font-size: 12px;">새로 나온 조지아 - Cinema편</strong></p>
+<p style="display: none;"><strong>커피 한잔 하자! 마음이 편해야 진짜 휴식이야~</strong></p>
+</a>
+</li>
+<li id="popup8">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/1908354c-45af-43ea-b8e2-729e2874e209.png" style="display: inline;" alt="조지아로 짧고 굵게 쉬자 - 극장 편">
+<p style="display: block"><strong style="color: #6b3219; font-size: 12px;">조지아로 짧고 굵게 쉬자 - 극장 편</strong></p>
+<p style="display: none;"><strong>영화보다 더 재미난 건 상사의 썰렁한 농담~</strong></p>
+</a>
+</li>
+<li id="popup9">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/05e590e1-82f1-4bfe-9cd6-595cdbf94225.png" style="display: inline;" alt="조지아로 짧고 굵게 쉬자 - 상사 편">
+<p style="display: block"><strong style="color: #6b3219; font-size: 12px;">조지아로 짧고 굵게 쉬자 - 상사 편</strong></p>
+<p style="display: none;"><strong>개콘보다 더 웃긴 건 상사의 썰렁한 농담~</strong></p>
+</a>
+</li>
+<li id="popup10">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/35d5b178-daa8-4f89-9406-6b67f6f604a9.png" style="display: inline;" alt="조지아로 힘내세요">
+<p style="display: block"><strong style="color: #6b3219; font-size: 12px;">조지아로 힘내세요</strong></p>
+<p style="display: none;"><strong>세계 판매 1위 캔커피 브랜드 조지아로 힘내세요</strong></p>
+</a>
+</li>
+<li id="popup11">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/8be886f7-872b-40ec-8ada-d608bf646b23.png" style="display: inline;" alt="일요일 밤 12시">
+<p style="display: block"><strong style="color: #6b3219; font-size: 12px;">일요일 밤 12시</strong></p>
+<p style="display: none;"><strong>누가 우릴 위로해주지? 조지아커피</strong></p>
+</a>
+</li>
+<li id="popup12">
+<a href="">
+<img src="../../lib/images/video/Coffee&Tea/Georgia/7408f50a-71f5-4deb-913d-fe6a9539707b.png" style="display: inline;" alt="조지아로 힘내세요">
+<p style="display: block"><strong style="color: #6b3219; font-size: 12px;">조지아로 힘내세요!</strong></p>
+<p style="display: none;"><strong>풍부한 커피의 맛과 향 조지아로 힘내세요</strong></p>
+</a>
+</li>
+</ul>
+</body>
+</html>
